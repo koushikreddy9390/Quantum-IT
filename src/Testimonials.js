@@ -21,6 +21,7 @@ export default function Testimonials() {
             <div style={{ textAlign: "center" }}>
               <p>Phalesus vitas suscipit justo. Marius pharendrs fegut lop.</p>
               <p>Your Testimonials component uses Bootstrap's carousel component to display images in a slideshow format. I noticed that some elements.</p>
+             <p  style={{color:"green"}}>Paul Williamson</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -34,6 +35,7 @@ export default function Testimonials() {
             <div style={{ textAlign: "center" }}>
               <p>Phalesus vitas suscipit justo. Marius pharendrs fegut lop.</p>
               <p>Your Testimonials component uses Bootstrap's carousel component to display images in a slideshow format. I noticed that some elements.</p>
+              <p  style={{color:"green"}}>Paul Williamson</p>
             </div>
           </div>
           <div className="carousel-item">
@@ -47,6 +49,7 @@ export default function Testimonials() {
             <div style={{ textAlign: "center" }}>
               <p>Phalesus vitas suscipit justo. Marius pharendrs fegut lop.</p>
               <p>Your Testimonials component uses Bootstrap's carousel component to display images in a slideshow format. I noticed that some elements.</p>
+              <p  style={{color:"green"}}>Paul Williamson</p>
             </div>
           </div>
         </div>
