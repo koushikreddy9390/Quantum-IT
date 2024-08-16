@@ -94,8 +94,8 @@ export default function Homepage() {
       <div className="container">
         <div className="card" style={{ border: "none" }}>
           <div className="card-body">
-            <h5 className="card-title">WE MAKE UR IDEA'S</h5>
-            <h5 className="card-subtitle mb-2 text-body-secondary">
+            <h5 className="card-title"  style={{color:"blue"}}>WE MAKE UR IDEA'S</h5>
+            <h5 className="card-subtitle "  style={{color:"brown"}}>
               INTO REALITY
             </h5>
             <p className="card-text">
