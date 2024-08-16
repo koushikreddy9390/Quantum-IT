@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import Products from "./Products";
 import Testimonials from "./Testimonials";
+import Contact from "./Contact"
 import Footer from "./Footer";
 
 export default function Homepage() {
@@ -178,6 +179,7 @@ export default function Homepage() {
       </div>
       <Products />
       <Testimonials />
+      <Contact/>
       <Footer />
     </div>
   );
