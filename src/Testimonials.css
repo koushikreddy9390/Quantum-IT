@@ -1,0 +1,90 @@
+
+
+
+
+
+.carousel-inner{
+ margin-top: 20px;
+
+}
+.carousel-control-prev-icon {
+  background-color: gray; /* Change background color */
+  border-radius: 50%; /* Make it circular */
+  padding: 10px; /* Add some padding */
+  color: black;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-color: gray; /* Change color on hover */
+}
+
+
+.carousel-control-next-icon{
+  background-color: gray; /* Change background color */
+  border-radius: 50%; /* Make it circular */
+  padding: 10px; /* Add some padding */
+  color: black;
+
+}
+
+
+
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: gray; /* Change color on hover */
+}
+
+
+.testimonials-container {
+  width: 100%;
+  max-width: 800px; /* Set a max width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Vertically center the image */
+}
+
+.circular-image {
+  width: 100px; /* Adjust width for mobile */
+  height: 100px; /* Keep it square */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Crop the image to fit */
+}
+
+.carousel-item {
+  text-align: center; /* Center the text */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .circular-image {
+      width: 150px; /* Increase size for larger screens */
+      height: 150px;
+  }
+
+  .testimonials-container {
+      padding: 40px; /* More padding for larger screens */
+  }
+
+  .carousel-item {
+      text-align: center; /* Ensure text is centered */
+  }
+}
+
+/* Adjust carousel control button sizes for mobile */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px; /* Control button size for mobile */
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      width: 40px; /* Control button size for larger screens */
+      height: 40px;
+  }
+}

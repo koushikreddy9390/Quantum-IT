@@ -1,0 +1,79 @@
+/* General styles */
+.contact-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add some padding around the container */
+}
+
+.header-container {
+  text-align: center; /* Center the text in this div */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.content-container {
+  display: flex; /* Use flexbox for image and form layout */
+  justify-content: center; /* Center items on smaller screens */
+  align-items: flex-start; /* Align items at the top */
+  width: 100%; /* Make sure it takes full width */
+  max-width: 1200px; /* Limit max width */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.image-container {
+  flex: 1; /* Allow the image container to take up space */
+  display: flex; /* Center image horizontally */
+  justify-content: center; 
+  margin-right: 20px; /* Add some space between image and form */
+  margin-bottom: 20px; /* Add space below image on smaller screens */
+}
+
+.form-container {
+  flex: 1; /* Allow the form container to take up space */
+  padding: 20px;
+  margin: 0; /* Remove margin */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .image-container {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 20px; /* Add space below image */
+  }
+
+  .form-container {
+    width: 100%; /* Full width for the form on smaller screens */
+    padding: 0; /* Remove padding on smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .form-container {
+    margin: 0 20px; /* Add some margin around the form */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    padding: 40px; /* Increase padding for larger screens */
+  }
+
+  .image-container {
+    margin-right: 40px; /* Increase right margin for better spacing */
+  }
+
+  .form-container {
+    max-width: 500px; /* Limit max width for the form on larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-container {
+    justify-content: space-between; /* Space items evenly on large screens */
+  }
+}
