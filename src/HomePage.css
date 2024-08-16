@@ -1,61 +1,65 @@
-
-
-  /* HomePage.css */
-
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Default to vertical layout */
+  align-items: center; /* Center items horizontally */
 }
 
 .card {
-  text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px; /* Space between card and image */
+  max-width: 100%; /* Ensure the card does not exceed the container width */
 }
 
 .image {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 
-/* Features section styles */
-.features-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0;
-}
 
-/* Responsive styles */
+.card-link:hover{
+  background-color: blue;
+  color: whitesmoke;
+}
+/* Media Queries */
 @media (min-width: 768px) {
-  .features-section {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  .container {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: space-between; /* Space between card and image */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .card {
+    margin-right: 20px; /* Space between card and image */
+    flex: 1; /* Allow the card to grow */
+  }
+
+  .image {
+    max-width: 300px; /* Limit max width for the image */
+    height: auto; /* Maintain aspect ratio */
   }
 }
 
-/* Button styles */
-.card-link {
-  background-color: transparent;
-  border: 2px solid blue;
-  color: blue;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+.feature-section {
+  display: flex;
+  flex-direction: column; /* Stack features vertically by default */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Space above features section */
 }
 
-.card-link:hover {
-  background-color: blue;
-  color: white;
+.feature-item {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between feature items */
+  width: 100%; /* Full width */
+  max-width: 800px; /* Limit max width */
 }
 
-
-.nav-item{
-  color: blue;
+.feature-image {
+  width: 100px; /* Fixed size for feature images */
+  height: 100px; /* Fixed height for feature images */
+  margin-right: 20px; /* Space between image and text */
 }
 
-
-
+.feature-text {
+  flex: 1; /* Allow text to take remaining space */
+}
